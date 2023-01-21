@@ -5,7 +5,7 @@ export const LaunchRequestHandler: RequestHandler = {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest'
   },
   handle(handlerInput: HandlerInput) {
-    const speakOutput = 'Gata gorda do caralho'
+    const speakOutput = 'Chamando a gata gorda...'
     return handlerInput.responseBuilder
       .speak(speakOutput)
       .reprompt(speakOutput)
